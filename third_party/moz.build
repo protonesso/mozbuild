@@ -1,0 +1,2 @@
+with Files('moz.build'):
+    BUG_COMPONENT = ('Firefox Build System', 'General')
