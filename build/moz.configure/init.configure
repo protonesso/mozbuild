@@ -1160,8 +1160,8 @@ def milestone(build_env, build_project, version_path, _):
         paths = paths * 3
     else:
         paths += [
-            'browser/config/version.txt',
-            'browser/config/version_display.txt',
+            'version.txt',
+            'version_display.txt',
         ]
     if version_path:
         version_path = version_path[0]

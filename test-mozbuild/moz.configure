@@ -1,0 +1,13 @@
+@depends(build_project)
+def building_neko(build_project):
+    return build_project == 'neko'
+
+js_option('--enable-keking', env='KEKING',
+          help='Enable ultimate kek')
+
+@depends('--enable-keking')
+def keking(value):
+    if not value:
+        return True
+
+set_config('KEKING', keking)

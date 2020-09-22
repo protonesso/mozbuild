@@ -743,8 +743,8 @@ add_old_configure_assignment('MOZ_SYSTEM_ZLIB', True, when='--with-system-zlib')
 # Fallthrough to autoconf-based configure
 include('build/moz.configure/old.configure')
 
-# JS Subconfigure.
-include('js/sub.configure', when=compile_environment & toolkit)
+# Subconfigure.
+include('build/moz.configure/sub.configure', when=compile_environment & toolkit)
 
 
 @depends(check_build_environment, build_project)
